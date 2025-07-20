@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5428350542500672"
-            crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clash Royale - Top Decks</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5428350542500672"
+            crossorigin="anonymous"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+        /* You can keep this style for a visual cue in case ads are blocked or fail to load */
         .ad-placeholder {
-            background-color: #e9e9e9;
-            border: 2px dashed #ccc;
+            background-color: #f7f7f7;
+            border: 1px dashed #ddd;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: #888;
             font-weight: 500;
+            min-height: 250px; /* Default ad height */
         }
     </style>
 </head>
@@ -50,15 +57,39 @@
         <aside class="col-span-12 lg:col-span-3">
             <h3 class="text-xl font-semibold mb-4">Advertisements</h3>
             <div class="space-y-6">
-                <div class="ad-placeholder h-64 w-full rounded-lg">
-                    <p>Advertisement<br>300x250</p>
-                </div>
-                <div class="ad-placeholder h-64 w-full rounded-lg">
-                    <p>Advertisement<br>300x250</p>
-                </div>
-                <div class="ad-placeholder h-64 w-full rounded-lg">
-                    <p>Advertisement<br>300x250</p>
-                </div>
+                <!--
+                  STEP 2: Replace the placeholders below with your AdSense Ad Unit code.
+                  Create a "Display ad" unit in AdSense for this spot.
+                -->
+                <ins class="adsbygoogle block"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="YYYYYYYYY1"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+                <ins class="adsbygoogle block"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="YYYYYYYYY2"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+                <ins class="adsbygoogle block"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="YYYYYYYYY3"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </aside>
 
@@ -66,9 +97,18 @@
     <!-- Bottom Ad Banner -->
     <div class="mt-12">
         <h3 class="text-xl font-semibold mb-4 text-center">Advertisement</h3>
-        <div class="ad-placeholder h-24 w-full max-w-4xl mx-auto rounded-lg">
-            <p>Advertisement<br>728x90</p>
-        </div>
+        <!--
+          STEP 3: Replace this placeholder with a horizontal/leaderboard Ad Unit code.
+        -->
+        <ins class="adsbygoogle block"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="YYYYYYYYY4"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 </main>
 
@@ -82,101 +122,18 @@
 
 <script>
     // --- DATA: CURATED CLASH ROYALE DECKS ---
-    // In a real-world application, this data would come from an API.
-    // Card names are used to generate image URLs. Ensure they match official names.
     const topDecks = [
-        {
-            name: "Classic Log Bait",
-            averageElixir: 2.9,
-            cards: [
-                { name: "Knight", icon: "knight" },
-                { name: "Goblin Barrel", icon: "goblin-barrel" },
-                { name: "Princess", icon: "princess" },
-                { name: "The Log", icon: "the-log" },
-                { name: "Goblin Gang", icon: "goblin-gang" },
-                { name: "Ice Spirit", icon: "ice-spirit" },
-                { name: "Inferno Tower", icon: "inferno-tower" },
-                { name: "Rocket", icon: "rocket" }
-            ]
-        },
-        {
-            name: "Hog 2.6 Cycle",
-            averageElixir: 2.6,
-            cards: [
-                { name: "Hog Rider", icon: "hog-rider" },
-                { name: "Musketeer", icon: "musketeer" },
-                { name: "Skeletons", icon: "skeletons" },
-                { name: "Ice Spirit", icon: "ice-spirit" },
-                { name: "The Log", icon: "the-log" },
-                { name: "Cannon", icon: "cannon" },
-                { name: "Fireball", icon: "fireball" },
-                { name: "Ice Golem", icon: "ice-golem" }
-            ]
-        },
-        {
-            name: "LavaLoon",
-            averageElixir: 4.1,
-            cards: [
-                { name: "Lava Hound", icon: "lava-hound" },
-                { name: "Balloon", icon: "balloon" },
-                { name: "Mega Minion", icon: "mega-minion" },
-                { name: "Tombstone", icon: "tombstone" },
-                { name: "Guards", icon: "guards" },
-                { name: "Fireball", icon: "fireball" },
-                { name: "Zap", icon: "zap" },
-                { name: "Valkyrie", icon: "valkyrie" }
-            ]
-        },
-        {
-            name: "Splashyard",
-            averageElixir: 3.6,
-            cards: [
-                { name: "Graveyard", icon: "graveyard" },
-                { name: "Baby Dragon", icon: "baby-dragon" },
-                { name: "Ice Wizard", icon: "ice-wizard" },
-                { name: "Tornado", icon: "tornado" },
-                { name: "Knight", icon: "knight" },
-                { name: "Poison", icon: "poison" },
-                { name: "The Log", icon: "the-log" },
-                { name: "Bomb Tower", icon: "bomb-tower" }
-            ]
-        },
-        {
-            name: "P.E.K.K.A. Bridge Spam",
-            averageElixir: 3.9,
-            cards: [
-                { name: "P.E.K.K.A.", icon: "pekka" },
-                { name: "Battle Ram", icon: "battle-ram" },
-                { name: "Bandit", icon: "bandit" },
-                { name: "Royal Ghost", icon: "royal-ghost" },
-                { name: "Magic Archer", icon: "magic-archer" },
-                { name: "Zap", icon: "zap" },
-                { name: "Poison", icon: "poison" },
-                { name: "Electro Wizard", icon: "electro-wizard" }
-            ]
-        },
-        {
-            name: "Golem Beatdown",
-            averageElixir: 4.3,
-            cards: [
-                { name: "Golem", icon: "golem" },
-                { name: "Night Witch", icon: "night-witch" },
-                { name: "Lumberjack", icon: "lumberjack" },
-                { name: "Baby Dragon", icon: "baby-dragon" },
-                { name: "Mega Minion", icon: "mega-minion" },
-                { name: "Tornado", icon: "tornado" },
-                { name: "Lightning", icon: "lightning" },
-                { name: "Elixir Collector", icon: "elixir-collector" }
-            ]
-        }
+        { name: "Classic Log Bait", averageElixir: 2.9, cards: [ { name: "Knight", icon: "knight" }, { name: "Goblin Barrel", icon: "goblin-barrel" }, { name: "Princess", icon: "princess" }, { name: "The Log", icon: "the-log" }, { name: "Goblin Gang", icon: "goblin-gang" }, { name: "Ice Spirit", icon: "ice-spirit" }, { name: "Inferno Tower", icon: "inferno-tower" }, { name: "Rocket", icon: "rocket" } ] },
+        { name: "Hog 2.6 Cycle", averageElixir: 2.6, cards: [ { name: "Hog Rider", icon: "hog-rider" }, { name: "Musketeer", icon: "musketeer" }, { name: "Skeletons", icon: "skeletons" }, { name: "Ice Spirit", icon: "ice-spirit" }, { name: "The Log", icon: "the-log" }, { name: "Cannon", icon: "cannon" }, { name: "Fireball", icon: "fireball" }, { name: "Ice Golem", icon: "ice-golem" } ] },
+        { name: "LavaLoon", averageElixir: 4.1, cards: [ { name: "Lava Hound", icon: "lava-hound" }, { name: "Balloon", icon: "balloon" }, { name: "Mega Minion", icon: "mega-minion" }, { name: "Tombstone", icon: "tombstone" }, { name: "Guards", icon: "guards" }, { name: "Fireball", icon: "fireball" }, { name: "Zap", icon: "zap" }, { name: "Valkyrie", icon: "valkyrie" } ] },
+        { name: "Splashyard", averageElixir: 3.6, cards: [ { name: "Graveyard", icon: "graveyard" }, { name: "Baby Dragon", icon: "baby-dragon" }, { name: "Ice Wizard", icon: "ice-wizard" }, { name: "Tornado", icon: "tornado" }, { name: "Knight", icon: "knight" }, { name: "Poison", icon: "poison" }, { name: "The Log", icon: "the-log" }, { name: "Bomb Tower", icon: "bomb-tower" } ] },
+        { name: "P.E.K.K.A. Bridge Spam", averageElixir: 3.9, cards: [ { name: "P.E.K.K.A.", icon: "pekka" }, { name: "Battle Ram", icon: "battle-ram" }, { name: "Bandit", icon: "bandit" }, { name: "Royal Ghost", icon: "royal-ghost" }, { name: "Magic Archer", icon: "magic-archer" }, { name: "Zap", icon: "zap" }, { name: "Poison", icon: "poison" }, { name: "Electro Wizard", icon: "electro-wizard" } ] },
+        { name: "Golem Beatdown", averageElixir: 4.3, cards: [ { name: "Golem", icon: "golem" }, { name: "Night Witch", icon: "night-witch" }, { name: "Lumberjack", icon: "lumberjack" }, { name: "Baby Dragon", icon: "baby-dragon" }, { name: "Mega Minion", icon: "mega-minion" }, { name: "Tornado", icon: "tornado" }, { name: "Lightning", icon: "lightning" }, { name: "Elixir Collector", icon: "elixir-collector" } ] }
     ];
 
     // --- SCRIPT TO RENDER DECKS ---
     const decksContainer = document.getElementById('decks-container');
-
-    // Function to generate the HTML for a single deck
     function createDeckHTML(deck) {
-        // Card images are from the official RoyaleAPI CDN
         const cardsHTML = deck.cards.map(card => `
                 <div class="w-1/4 p-1">
                     <img src="https://cdn.royaleapi.com/static/img/cards-150/${card.icon}.png"
@@ -202,17 +159,12 @@
                 </div>
             `;
     }
-
-    // Populate the container with all the decks
     function renderDecks() {
         if (decksContainer) {
             decksContainer.innerHTML = topDecks.map(createDeckHTML).join('');
         }
     }
-
-    // Initial render on page load
     document.addEventListener('DOMContentLoaded', renderDecks);
-
 </script>
 </body>
 </html>
