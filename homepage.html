@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale - Top Decks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .ad-placeholder {
+            background-color: #e9e9e9;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #888;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 md:px-6 md:py-6 flex justify-between items-center">
+        <h1 class="text-2xl md:text-3xl font-bold text-blue-600">Clash Royale Deck Hub</h1>
+        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Contact Us</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 md:px-6 py-8">
+    <div class="grid grid-cols-12 gap-8">
+
+        <!-- Decks Section -->
+        <div class="col-span-12 lg:col-span-9">
+            <h2 class="text-2xl font-semibold mb-6">Top Performing Decks</h2>
+            <div id="decks-container" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                <!-- Decks will be injected here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Ads Sidebar -->
+        <aside class="col-span-12 lg:col-span-3">
+            <h3 class="text-xl font-semibold mb-4">Advertisements</h3>
+            <div class="space-y-6">
+                <div class="ad-placeholder h-64 w-full rounded-lg">
+                    <p>Advertisement<br>300x250</p>
+                </div>
+                <div class="ad-placeholder h-64 w-full rounded-lg">
+                    <p>Advertisement<br>300x250</p>
+                </div>
+                <div class="ad-placeholder h-64 w-full rounded-lg">
+                    <p>Advertisement<br>300x250</p>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+    <!-- Bottom Ad Banner -->
+    <div class="mt-12">
+        <h3 class="text-xl font-semibold mb-4 text-center">Advertisement</h3>
+        <div class="ad-placeholder h-24 w-full max-w-4xl mx-auto rounded-lg">
+            <p>Advertisement<br>728x90</p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white mt-12 py-6">
+    <div class="container mx-auto px-4 md:px-6 text-center text-gray-600">
+        <p>&copy; 2025 Clash Royale Deck Hub. All rights reserved.</p>
+        <p class="text-sm mt-2">This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell’s Fan Content Policy.</p>
+    </div>
+</footer>
+
+<script>
+    // --- DATA: CURATED CLASH ROYALE DECKS ---
+    // In a real-world application, this data would come from an API.
+    // Card names are used to generate image URLs. Ensure they match official names.
+    const topDecks = [
+        {
+            name: "Classic Log Bait",
+            averageElixir: 2.9,
+            cards: [
+                { name: "Knight", icon: "knight" },
+                { name: "Goblin Barrel", icon: "goblin-barrel" },
+                { name: "Princess", icon: "princess" },
+                { name: "The Log", icon: "the-log" },
+                { name: "Goblin Gang", icon: "goblin-gang" },
+                { name: "Ice Spirit", icon: "ice-spirit" },
+                { name: "Inferno Tower", icon: "inferno-tower" },
+                { name: "Rocket", icon: "rocket" }
+            ]
+        },
+        {
+            name: "Hog 2.6 Cycle",
+            averageElixir: 2.6,
+            cards: [
+                { name: "Hog Rider", icon: "hog-rider" },
+                { name: "Musketeer", icon: "musketeer" },
+                { name: "Skeletons", icon: "skeletons" },
+                { name: "Ice Spirit", icon: "ice-spirit" },
+                { name: "The Log", icon: "the-log" },
+                { name: "Cannon", icon: "cannon" },
+                { name: "Fireball", icon: "fireball" },
+                { name: "Ice Golem", icon: "ice-golem" }
+            ]
+        },
+        {
+            name: "LavaLoon",
+            averageElixir: 4.1,
+            cards: [
+                { name: "Lava Hound", icon: "lava-hound" },
+                { name: "Balloon", icon: "balloon" },
+                { name: "Mega Minion", icon: "mega-minion" },
+                { name: "Tombstone", icon: "tombstone" },
+                { name: "Guards", icon: "guards" },
+                { name: "Fireball", icon: "fireball" },
+                { name: "Zap", icon: "zap" },
+                { name: "Valkyrie", icon: "valkyrie" }
+            ]
+        },
+        {
+            name: "Splashyard",
+            averageElixir: 3.6,
+            cards: [
+                { name: "Graveyard", icon: "graveyard" },
+                { name: "Baby Dragon", icon: "baby-dragon" },
+                { name: "Ice Wizard", icon: "ice-wizard" },
+                { name: "Tornado", icon: "tornado" },
+                { name: "Knight", icon: "knight" },
+                { name: "Poison", icon: "poison" },
+                { name: "The Log", icon: "the-log" },
+                { name: "Bomb Tower", icon: "bomb-tower" }
+            ]
+        },
+        {
+            name: "P.E.K.K.A. Bridge Spam",
+            averageElixir: 3.9,
+            cards: [
+                { name: "P.E.K.K.A.", icon: "pekka" },
+                { name: "Battle Ram", icon: "battle-ram" },
+                { name: "Bandit", icon: "bandit" },
+                { name: "Royal Ghost", icon: "royal-ghost" },
+                { name: "Magic Archer", icon: "magic-archer" },
+                { name: "Zap", icon: "zap" },
+                { name: "Poison", icon: "poison" },
+                { name: "Electro Wizard", icon: "electro-wizard" }
+            ]
+        },
+        {
+            name: "Golem Beatdown",
+            averageElixir: 4.3,
+            cards: [
+                { name: "Golem", icon: "golem" },
+                { name: "Night Witch", icon: "night-witch" },
+                { name: "Lumberjack", icon: "lumberjack" },
+                { name: "Baby Dragon", icon: "baby-dragon" },
+                { name: "Mega Minion", icon: "mega-minion" },
+                { name: "Tornado", icon: "tornado" },
+                { name: "Lightning", icon: "lightning" },
+                { name: "Elixir Collector", icon: "elixir-collector" }
+            ]
+        }
+    ];
+
+    // --- SCRIPT TO RENDER DECKS ---
+    const decksContainer = document.getElementById('decks-container');
+
+    // Function to generate the HTML for a single deck
+    function createDeckHTML(deck) {
+        // Card images are from the official RoyaleAPI CDN
+        const cardsHTML = deck.cards.map(card => `
+                <div class="w-1/4 p-1">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/${card.icon}.png"
+                         alt="${card.name}"
+                         class="w-full rounded-md shadow-sm"
+                         onerror="this.onerror=null;this.src='https://placehold.co/150x180/e0e0e0/ffffff?text=${card.name.replace(/\s/g, '+')}';"
+                         title="${card.name}">
+                </div>
+            `).join('');
+
+        return `
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="text-lg font-bold text-gray-900">${deck.name}</h4>
+                        <div class="flex items-center mt-1 mb-4">
+                            <img src="https://cdn.royaleapi.com/static/img/ui/elixir.png" alt="Elixir" class="w-5 h-5 mr-1">
+                            <p class="text-md font-semibold text-purple-600">${deck.averageElixir} Average Elixir</p>
+                        </div>
+                        <div class="flex flex-wrap -m-1">
+                            ${cardsHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+    }
+
+    // Populate the container with all the decks
+    function renderDecks() {
+        if (decksContainer) {
+            decksContainer.innerHTML = topDecks.map(createDeckHTML).join('');
+        }
+    }
+
+    // Initial render on page load
+    document.addEventListener('DOMContentLoaded', renderDecks);
+
+</script>
+</body>
+</html>
